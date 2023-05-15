@@ -40,7 +40,7 @@
 
   .w-main-section {
     display: flex;
-
+    position: absolute;
     flex-direction: column;
     align-items: center;
     width: 100%;
@@ -50,7 +50,7 @@
   .w-home-presentation {
     display: flex;
     position: relative;
-    width: 55%;
+    width: 30%;
     top: 26%;
     flex-direction: column;
     align-items: center;
@@ -72,8 +72,23 @@
 
   /* SECOND SECTION  */
 
-  .w-secondary-section {
+  .w-second-section {
+    display: flex;
+    position: absolute;
+    top: 300px;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
     height: 960px;
+    z-index: -1;
+  }
+
+  /* THIRD SECTION */
+
+  .w-third-section {
+  display: flex;
+  position: absolute;
+  top: 1600px;
   }
 
   /* CSS UTILITARY */
@@ -113,7 +128,6 @@
 
   .w-home-presentation {
     top: 22%;
-    width: 50%;
   }
 
   .w-hero {
@@ -170,7 +184,7 @@
 /* BACKGROUND  */
 
 .w-bg-ghost-white {
-  background-color: #979797;
+  background-color: #fcf8ff;
 }
 
 .w-bg-dark-purple {
@@ -181,7 +195,6 @@
   position: absolute;
   width: 200%;
   border-radius: 0 0 100% 100%;
-  
 }
 
 /* TEXT  */
