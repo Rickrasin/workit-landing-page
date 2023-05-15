@@ -1,0 +1,249 @@
+@font-face {
+  font-family: "Manrope";
+  src: url("../assets/fonts/manrope/Manrope-VariableFont_wght.ttf")
+    format("truetype");
+}
+
+@font-face {
+  font-family: "Fraunces";
+  src: url("../assets/fonts/fraunces/Fraunces-VariableFont_SOFT\,WONK\,opsz\,wght.ttf")
+    format("truetype");
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+@media screen and (min-width: 576px) {
+  /* HEADER */
+
+  header {
+    display: flex;
+    justify-content: space-around;
+    position: absolute;
+    width: 100%;
+    height: 40px;
+    z-index: 2;
+  }
+
+  /* WRAPPER */
+
+  .w-page-wrapper {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+  }
+
+  /* Main Section */
+
+  .w-main-section {
+    display: flex;
+
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 680px;
+  }
+
+  .w-home-presentation {
+    display: flex;
+    position: relative;
+    width: 55%;
+    top: 26%;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .w-hero {
+    display: block;
+    position: absolute;
+    top: 400px;
+    width: 450px;
+    height: 450px;
+    z-index: 2;
+  }
+
+  .w-pattern-1 {
+    display: block;
+    position: absolute;
+  }
+
+  /* SECOND SECTION  */
+
+  .w-secondary-section {
+    height: 960px;
+  }
+
+  /* CSS UTILITARY */
+
+  .w-main-title {
+    font-family: "Fraunces 144pt";
+    font-size: 50px;
+    font-weight: 600;
+    text-align: center;
+  }
+  .w-primary-button {
+    font-family: "Manrope";
+    font-weight: 700;
+    color: black;
+    background-color: #44ffa1;
+    padding: 16px 32px;
+    border: none;
+  }
+
+  .w-secondary-button {
+    font-family: "Manrope";
+    font-weight: 700;
+    background: transparent;
+    font-size: 18px;
+    line-height: 32px;
+    letter-spacing: -0.18px;
+
+    border: none;
+    border-bottom: 2px solid #44ffa1;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .w-main-section {
+    height: 680px;
+  }
+
+  .w-home-presentation {
+    top: 22%;
+    width: 50%;
+  }
+
+  .w-hero {
+    display: block;
+    position: absolute;
+    top: 380px;
+    width: 480px;
+    height: 480px;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  Header {
+    justify-content: space-around;
+  }
+
+  .w-main-section {
+    height: 720px;
+  }
+
+  .w-main-title {
+    font-size: 80px;
+  }
+
+  .w-home-presentation {
+    top: 16%;
+    width: 30%;
+  }
+
+  .w-hero {
+    display: block;
+    position: absolute;
+    top: 460px;
+    width: 650px;
+    height: 450px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  /* Main Section */
+
+  .w-main-section {
+    height: 730px;
+  }
+
+  .w-home-presentation {
+    top: 18%;
+    width: 30%;
+  }
+}
+
+/* CSS UTILITARY */
+
+/* BACKGROUND  */
+
+.w-bg-ghost-white {
+  background-color: #979797;
+}
+
+.w-bg-dark-purple {
+  background-color: #24053e;
+}
+
+.w-bg-curved {
+  position: absolute;
+  width: 200%;
+  border-radius: 0 0 100% 100%;
+  
+}
+
+/* TEXT  */
+
+.w-text-white {
+  color: #fff;
+}
+
+.w-text-dark-purple {
+  color: #24053e;
+}
+
+.w-text-line {
+  border-bottom: 2px solid #44ffa1;
+}
+
+/* MARGIN */
+
+.w-margin-top-16 {
+  margin-top: 16px;
+}
+
+.w-margin-right-16 {
+  margin-right: 16px;
+}
+
+.w-margin-bottom-16 {
+  margin-bottom: 16px;
+}
+
+.w-margin-left-16 {
+  margin-left: 16px;
+}
+
+.w-margin-top-50 {
+  margin-top: 50px;
+}
+
+.w-margin-right-50 {
+  margin-right: 50px;
+}
+
+.w-margin-bottom-50 {
+  margin-bottom: 50px;
+}
+
+.w-margin-left-50 {
+  margin-left: 50px;
+}
+
+.w-margin-top-80 {
+  margin-top: 80px;
+}
+
+.w-margin-right-80 {
+  margin-right: 80px;
+}
+
+.w-margin-bottom-80 {
+  margin-bottom: 80px;
+}
+
+.w-margin-left-80 {
+  margin-left: 80px;
+}
