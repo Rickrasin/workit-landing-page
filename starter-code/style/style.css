@@ -5,7 +5,7 @@
 }
 
 @font-face {
-  font-family: "Fraunces";
+  font-family: "Fraunces 144pt";
   src: url("../assets/fonts/fraunces/Fraunces-VariableFont_SOFT\,WONK\,opsz\,wght.ttf")
     format("truetype");
 }
@@ -13,6 +13,10 @@
 * {
   margin: 0;
   padding: 0;
+}
+
+body {
+  overflow-x: hidden;
 }
 
 @media screen and (min-width: 576px) {
@@ -23,7 +27,7 @@
     justify-content: space-around;
     position: absolute;
     width: 100%;
-    height: 40px;
+    height: 24px;
     z-index: 2;
   }
 
@@ -47,10 +51,19 @@
     height: 680px;
   }
 
+  .w-main-section::before {
+    content: "";
+    background-color: #24053e;
+    position: absolute;
+    width: 200%;
+    height: 690px;
+    border-radius: 0 0 200% 200%;
+  }
+
   .w-home-presentation {
     display: flex;
     position: relative;
-    width: 30%;
+    width: 343px;
     top: 26%;
     flex-direction: column;
     align-items: center;
@@ -59,9 +72,9 @@
   .w-hero {
     display: block;
     position: absolute;
-    top: 400px;
-    width: 450px;
-    height: 450px;
+    top: 460px;
+    width: 380px;
+    height: 380px;
     z-index: 2;
   }
 
@@ -75,20 +88,53 @@
   .w-second-section {
     display: flex;
     position: absolute;
-    top: 300px;
+    top: 600px;
     flex-direction: column;
     align-items: center;
     width: 100%;
-    height: 960px;
+    height: 1300px;
     z-index: -1;
+  }
+
+  .w-second-section::before {
+    content: "";
+    background-color: #fcf8ff;
+    position: absolute;
+    width: 200%;
+    height: 1000px;
+    border-radius: 0 0 200% 200%;
+  }
+  .w-second-content {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    top: 300px;
+    height: 476px;
+    width: 580px;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .w-container {
+    margin-left: 12px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 108px;
+  }
+
+  .w-container-bottom {
+    width: 490px;
   }
 
   /* THIRD SECTION */
 
   .w-third-section {
-  display: flex;
-  position: absolute;
-  top: 1600px;
+    display: flex;
+    position: absolute;
+    top: 2200px;
   }
 
   /* CSS UTILITARY */
@@ -99,83 +145,176 @@
     font-weight: 600;
     text-align: center;
   }
-  .w-primary-button {
-    font-family: "Manrope";
-    font-weight: 700;
-    color: black;
-    background-color: #44ffa1;
-    padding: 16px 32px;
-    border: none;
+
+  .w-second-title {
+    font-family: "Fraunces 144pt";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 28px;
+    line-height: 40px;
   }
 
-  .w-secondary-button {
+  .w-text {
+    /* Body */
     font-family: "Manrope";
-    font-weight: 700;
-    background: transparent;
-    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
     line-height: 32px;
-    letter-spacing: -0.18px;
+  }
 
-    border: none;
-    border-bottom: 2px solid #44ffa1;
+  .w-circle {
+    box-sizing: border-box;
+
+    /* Davy's Grey */
+    border: 1px solid #584d62;
+    border-radius: 30.5px;
+
+    width: 50px;
+    height: 50px;
+
+    text-align: center;
+  }
+  .w-circle-text {
+    /* TEXT  */
+
+    font-family: "Fraunces 144pt";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 40px;
   }
 }
 
 @media screen and (min-width: 768px) {
-  .w-main-section {
-    height: 680px;
-  }
-
   .w-home-presentation {
-    top: 22%;
+    width: 570px;
   }
 
-  .w-hero {
-    display: block;
-    position: absolute;
-    top: 380px;
-    width: 480px;
-    height: 480px;
+  /* SECOND SECTION  */
+
+  .w-second-content {
+    flex-direction: column;
+    justify-content: space-between;
+    top: 300px;
+    height: 476px;
+    width: 583px;
+  }
+
+  .w-container {
+    flex-direction: row;
+    justify-content: space-between;
+    height: 108px;
+    width: 100%;
+  }
+
+  .w-container-bottom {
+    width: 493px;
   }
 }
 
 @media screen and (min-width: 992px) {
+  /* HEADER */
+
   Header {
     justify-content: space-around;
   }
 
+  /* MAIN SECTION  */
+
   .w-main-section {
-    height: 720px;
+    height: 990px;
+  }
+
+  .w-main-section::before {
+    height: 890px;
+  }
+
+  .w-home-presentation {
+    top: 22%;
+    width: 635px;
   }
 
   .w-main-title {
     font-size: 80px;
   }
 
-  .w-home-presentation {
-    top: 16%;
-    width: 30%;
-  }
-
   .w-hero {
     display: block;
     position: absolute;
-    top: 460px;
-    width: 650px;
+    top: 620px;
+    width: 550px;
     height: 450px;
+  }
+
+  /* SECOND SECTION  */
+
+  .w-second-section {
+    height: 1300px;
+  }
+
+  .w-second-section::before {
+    height: 1240px;
+  }
+
+  .w-second-content {
+    top: 560px;
   }
 }
 
 @media screen and (min-width: 1200px) {
   /* Main Section */
 
-  .w-main-section {
-    height: 730px;
+  /* SECOND SECTION  */
+
+  .w-second-section {
+    height: 1200px;
   }
 
-  .w-home-presentation {
-    top: 18%;
-    width: 30%;
+  .w-second-content {
+    display: flex;
+    height: 308px;
+    width: 1114px;
+    position: relative;
+    top: 580px;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+  }
+
+  .w-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    width: 354px;
+    height: 100%;
+  }
+
+  .w-container-bottom {
+    width: 354px;
+  }
+
+  /* FOOTER  */
+
+  footer {
+    display: block;
+    position: absolute;
+    top: 2200px;
+    height: 120px;
+    width: 100%;
+    background-color: #24053e;
+  }
+
+  /* CSS UTILITY */
+
+  .w-second-title {
+    font-size: 32px;
+  }
+
+  .w-text {
+    font-size: 18px;
   }
 }
 
@@ -192,8 +331,9 @@
 }
 
 .w-bg-curved {
-  position: absolute;
-  width: 200%;
+  display: none;
+  width: 100%;
+  background-size: 200%;
   border-radius: 0 0 100% 100%;
 }
 
@@ -209,6 +349,52 @@
 
 .w-text-line {
   border-bottom: 2px solid #44ffa1;
+}
+
+/* BUTTONS  */
+
+.w-primary-button {
+  cursor: pointer;
+  font-family: "Manrope";
+  font-weight: 700;
+  color: black;
+  background-color: #44ffa1;
+  padding: 16px 32px;
+  border: none;
+  transform: scale(1);
+
+  transition: 0.2s;
+}
+
+.w-primary-button:active {
+  background-color: transparent;
+  border: 1px solid #44ffa1;
+  color: #44ffa1;
+  transform: scale(0.95);
+}
+
+.w-secondary-button {
+  cursor: pointer;
+  font-family: "Manrope";
+  font-weight: 700;
+  background: transparent;
+  font-size: 18px;
+  line-height: 32px;
+  letter-spacing: -0.18px;
+
+  border: none;
+  border-bottom: 2px solid #44ffa1;
+  height: 40px;
+
+  transition: 0.2s;
+}
+
+.w-secondary-button:active {
+  color: #44ffa1;
+}
+
+.w-main-icon {
+  cursor: pointer;
 }
 
 /* MARGIN */
@@ -227,6 +413,22 @@
 
 .w-margin-left-16 {
   margin-left: 16px;
+}
+
+.w-margin-top-28 {
+  margin-top: 28px;
+}
+
+.w-margin-right-28 {
+  margin-right: 28px;
+}
+
+.w-margin-bottom-28 {
+  margin-bottom: 28px;
+}
+
+.w-margin-left-28 {
+  margin-left: 28px;
 }
 
 .w-margin-top-50 {
