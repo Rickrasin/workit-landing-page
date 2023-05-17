@@ -15,7 +15,8 @@
   padding: 0;
 }
 
-body {
+body,
+html {
   overflow-x: hidden;
 }
 
@@ -36,7 +37,7 @@ body {
   .w-page-wrapper {
     display: flex;
     flex-direction: column;
-    height: 100%;
+    height: 3000px;
     width: 100%;
   }
 
@@ -79,8 +80,11 @@ body {
   }
 
   .w-pattern-1 {
-    display: block;
-    position: absolute;
+    display: none;
+  }
+
+  .w-pattern-2 {
+    display: none;
   }
 
   /* SECOND SECTION  */
@@ -134,7 +138,45 @@ body {
   .w-third-section {
     display: flex;
     position: absolute;
-    top: 2200px;
+    justify-content: center;
+    top: 1750px;
+    width: 100%;
+    height: 603px;
+  }
+
+  .w-third-content {
+    width: 343px;
+    height: 100%;
+  }
+
+  .w-founder-img {
+    margin-left: 35px;
+    height: 281px;
+    width: 281px;
+  }
+
+  .w-box {
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    bottom: 62px;
+    width: 343px;
+    height: 375px;
+  }
+
+  .w-box-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 281px;
+    height: 100%;
+  }
+
+  .w-pattern-3 {
+    display: none;
   }
 
   /* CSS UTILITARY */
@@ -152,6 +194,15 @@ body {
     font-weight: 600;
     font-size: 28px;
     line-height: 40px;
+  }
+
+  .w-third-title {
+    /* Heading M */
+    font-family: "Fraunces 144pt";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 64px;
   }
 
   .w-text {
@@ -191,6 +242,21 @@ body {
     width: 570px;
   }
 
+  .w-pattern-1 {
+    display: block;
+    position: absolute;
+    width: 360px;
+    left: -200px;
+    top: 20%;
+  }
+
+  .w-pattern-2 {
+    display: block;
+    position: absolute;
+    right: -90px;
+    top: 50%;
+  }
+
   /* SECOND SECTION  */
 
   .w-second-content {
@@ -211,6 +277,49 @@ body {
   .w-container-bottom {
     width: 493px;
   }
+
+  /* THIRD SECTION */
+
+  .w-third-section {
+    display: flex;
+    justify-content: center;
+    height: 526px;
+    top: 1800px;
+  }
+
+  .w-third-content {
+    display: block;
+    width: 689px;
+    height: 100%;
+  }
+
+  .w-box {
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    left: 172px;
+    bottom: 140px;
+    width: 514px;
+    height: 375px;
+  }
+
+  .w-box-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: start;
+    width: 402px;
+    height: 271px;
+  }
+
+  .w-pattern-3 {
+    display: block;
+    position: absolute;
+    top: 280px;
+    right: 60px;
+  }
 }
 
 @media screen and (min-width: 992px) {
@@ -228,6 +337,19 @@ body {
 
   .w-main-section::before {
     height: 890px;
+  }
+
+  .w-pattern-1 {
+    
+    width: 460px;
+    left: -200px;
+    top: 20%;
+  }
+
+  .w-pattern-2 {
+   
+    right: -50px;
+    top: 50%;
   }
 
   .w-home-presentation {
@@ -260,10 +382,19 @@ body {
   .w-second-content {
     top: 560px;
   }
+
+  /* THIRD SECTION  */
+  .w-third-section {
+    top: 2000px;
+  }
 }
 
 @media screen and (min-width: 1200px) {
   /* Main Section */
+
+  
+
+  
 
   /* SECOND SECTION  */
 
@@ -296,21 +427,66 @@ body {
     width: 354px;
   }
 
+  /* THIRD SECTION */
+
+  .w-third-section {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 640px;
+    top: 2000px;
+  }
+
+  .w-third-content {
+    width: 1112px;
+    height: 100%;
+  }
+
+  .w-founder-img {
+    height: 477px;
+    width: 477px;
+  }
+
+  .w-box {
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    left: 380px;
+    bottom: 260px;
+    width: 730px;
+    height: 413px;
+  }
+
+  .w-box-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: start;
+    width: 602px;
+    height: 290px;
+  }
+
   /* FOOTER  */
 
   footer {
     display: block;
     position: absolute;
-    top: 2200px;
+    bottom: 0;
     height: 120px;
     width: 100%;
-    background-color: #24053e;
+    background-color: gray;
   }
 
   /* CSS UTILITY */
 
   .w-second-title {
     font-size: 32px;
+  }
+
+  .w-third-title {
+    font-size: 56px;
   }
 
   .w-text {
@@ -359,18 +535,16 @@ body {
   font-weight: 700;
   color: black;
   background-color: #44ffa1;
-  padding: 16px 32px;
-  border: none;
-  transform: scale(1);
-
-  transition: 0.2s;
+  padding: 20px 32px;
+  border: 1px solid #44ffa1;
+  transition: 0.3s;
 }
 
 .w-primary-button:active {
   background-color: transparent;
   border: 1px solid #44ffa1;
   color: #44ffa1;
-  transform: scale(0.95);
+  transform: scale(0.98);
 }
 
 .w-secondary-button {
