@@ -61,6 +61,8 @@ html {
     height: 690px;
     border-radius: 0 0 200% 200%;
     transform: translateY(-250%) scale(6);
+    transform-origin: center;
+    overflow: hidden;
   }
 
   .w-home-presentation {
@@ -110,7 +112,8 @@ html {
     height: 1100px;
     border-radius: 0 0 200% 200%;
     transform: translateY(-240%) scale(6);
-    
+    transform-origin: center;
+    overflow: hidden;
   }
 
   .w-second-content {
