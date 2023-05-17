@@ -37,7 +37,7 @@ html {
   .w-page-wrapper {
     display: flex;
     flex-direction: column;
-    height: 3000px;
+    height: 2600px;
     width: 100%;
   }
 
@@ -137,7 +137,7 @@ html {
 
   .w-third-section {
     display: flex;
-    position: absolute;
+    position: relative;
     justify-content: center;
     top: 1750px;
     width: 100%;
@@ -177,6 +177,37 @@ html {
 
   .w-pattern-3 {
     display: none;
+  }
+
+  /* FOOTER  */
+
+  .w-footer {
+    display: flex;
+    justify-content: center;
+    height: 212px;
+    width: 100%;
+  }
+
+  .w-footer-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 102px;
+    height: 102px;
+  }
+
+  .w-media-icons {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .w-media-icons a {
+    cursor: pointer;
+    color: #584d62;
+  }
+
+  .w-media-icons a:active {
+    color: black;
   }
 
   /* CSS UTILITARY */
@@ -329,6 +360,12 @@ html {
     justify-content: space-around;
   }
 
+  /* PAGE WRAPPER  */
+
+  .w-page-wrapper {
+    height: 2750px;
+  }
+
   /* MAIN SECTION  */
 
   .w-main-section {
@@ -340,14 +377,12 @@ html {
   }
 
   .w-pattern-1 {
-    
     width: 460px;
     left: -200px;
     top: 20%;
   }
 
   .w-pattern-2 {
-   
     right: -50px;
     top: 50%;
   }
@@ -392,9 +427,11 @@ html {
 @media screen and (min-width: 1200px) {
   /* Main Section */
 
-  
+  /* PAGE WRAPPER  */
 
-  
+  .w-page-wrapper {
+    height: 2900px;
+  }
 
   /* SECOND SECTION  */
 
@@ -468,17 +505,6 @@ html {
     height: 290px;
   }
 
-  /* FOOTER  */
-
-  footer {
-    display: block;
-    position: absolute;
-    bottom: 0;
-    height: 120px;
-    width: 100%;
-    background-color: gray;
-  }
-
   /* CSS UTILITY */
 
   .w-second-title {
@@ -517,6 +543,10 @@ html {
 
 .w-text-white {
   color: #fff;
+}
+
+.w-text-davy-grey {
+  color: #584d62;
 }
 
 .w-text-dark-purple {
