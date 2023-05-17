@@ -56,7 +56,7 @@ html {
     content: "";
     background-color: #24053e;
     position: absolute;
-    width: 200%;
+    width: 100%;
     height: 690px;
     border-radius: 0 0 200% 200%;
   }
@@ -96,7 +96,7 @@ html {
     flex-direction: column;
     align-items: center;
     width: 100%;
-    height: 1300px;
+    height: 1400px;
     z-index: -1;
   }
 
@@ -104,17 +104,17 @@ html {
     content: "";
     background-color: #fcf8ff;
     position: absolute;
-    width: 200%;
-    height: 1000px;
+    width: 100%;
+    height: 1200px;
     border-radius: 0 0 200% 200%;
   }
   .w-second-content {
     display: flex;
     flex-direction: column;
     position: relative;
-    top: 300px;
+    top: 350px;
     height: 476px;
-    width: 580px;
+    width: 380px;
     align-items: center;
     justify-content: space-between;
   }
@@ -123,14 +123,14 @@ html {
     margin-left: 12px;
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
     width: 100%;
-    height: 108px;
+    height: 300px;
   }
 
   .w-container-bottom {
-    width: 490px;
+    width: 290px;
   }
 
   /* THIRD SECTION */
@@ -252,8 +252,8 @@ html {
     border: 1px solid #584d62;
     border-radius: 30.5px;
 
-    width: 40px;
-    height: 40px;
+    width: 50px;
+    height: 50px;
 
     text-align: center;
   }
