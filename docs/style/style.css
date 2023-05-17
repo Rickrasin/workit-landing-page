@@ -20,6 +20,254 @@ html {
   overflow-x: hidden;
 }
 
+@media screen {
+  /* HEADER */
+
+  header {
+    display: flex;
+    justify-content: space-around;
+    position: absolute;
+    width: 100%;
+    height: 24px;
+    z-index: 2;
+  }
+
+  /* WRAPPER */
+
+  .w-page-wrapper {
+    display: flex;
+    flex-direction: column;
+    height: 2600px;
+    width: 100%;
+  }
+
+  /* Main Section */
+
+  .w-main-section {
+    display: flex;
+    position: absolute;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 680px;
+  }
+
+  .w-main-section::before {
+    content: "";
+    background-color: #24053e;
+    position: absolute;
+    width: 200%;
+    height: 690px;
+    border-radius: 0 0 200% 200%;
+  }
+
+  .w-home-presentation {
+    display: flex;
+    position: relative;
+    width: 343px;
+    top: 26%;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .w-hero {
+    display: block;
+    position: absolute;
+    top: 460px;
+    width: 380px;
+    height: 380px;
+    z-index: 2;
+  }
+
+  .w-pattern-1 {
+    display: none;
+  }
+
+  .w-pattern-2 {
+    display: none;
+  }
+
+  /* SECOND SECTION  */
+
+  .w-second-section {
+    display: flex;
+    position: absolute;
+    top: 600px;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 1300px;
+    z-index: -1;
+  }
+
+  .w-second-section::before {
+    content: "";
+    background-color: #fcf8ff;
+    position: absolute;
+    width: 200%;
+    height: 1000px;
+    border-radius: 0 0 200% 200%;
+  }
+  .w-second-content {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    top: 300px;
+    height: 476px;
+    width: 580px;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .w-container {
+    margin-left: 12px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 108px;
+  }
+
+  .w-container-bottom {
+    width: 490px;
+  }
+
+  /* THIRD SECTION */
+
+  .w-third-section {
+    display: flex;
+    position: relative;
+    justify-content: center;
+    top: 1750px;
+    width: 100%;
+    height: 603px;
+  }
+
+  .w-third-content {
+    width: 343px;
+    height: 100%;
+  }
+
+  .w-founder-img {
+    margin-left: 35px;
+    height: 281px;
+    width: 281px;
+  }
+
+  .w-box {
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    bottom: 62px;
+    width: 343px;
+    height: 375px;
+  }
+
+  .w-box-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 281px;
+    height: 100%;
+  }
+
+  .w-pattern-3 {
+    display: none;
+  }
+
+  /* FOOTER  */
+
+  .w-footer {
+    display: flex;
+    justify-content: center;
+    height: 212px;
+    width: 100%;
+  }
+
+  .w-footer-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 102px;
+    height: 102px;
+  }
+
+  .w-media-icons {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .w-media-icons a {
+    cursor: pointer;
+    color: #584d62;
+  }
+
+  .w-media-icons a:active {
+    color: black;
+  }
+
+  /* CSS UTILITARY */
+
+  .w-main-title {
+    font-family: "Fraunces 144pt";
+    font-size: 50px;
+    font-weight: 600;
+    text-align: center;
+  }
+
+  .w-second-title {
+    font-family: "Fraunces 144pt";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 40px;
+  }
+
+  .w-third-title {
+    /* Heading M */
+    font-family: "Fraunces 144pt";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 28px;
+    line-height: 64px;
+  }
+
+  .w-text {
+    /* Body */
+    font-family: "Manrope";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 32px;
+  }
+
+  .w-circle {
+    box-sizing: border-box;
+
+    /* Davy's Grey */
+    border: 1px solid #584d62;
+    border-radius: 30.5px;
+
+    width: 40px;
+    height: 40px;
+
+    text-align: center;
+  }
+  .w-circle-text {
+    /* TEXT  */
+
+    font-family: "Fraunces 144pt";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 40px;
+  }
+}
+
 @media screen and (min-width: 576px) {
   /* HEADER */
 
